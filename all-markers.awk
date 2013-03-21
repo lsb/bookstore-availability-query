@@ -1,4 +1,4 @@
-BEGIN { FS="\t" ; ORS="" }
+BEGIN { FS="\t" ; ORS=""; print "http://maps.googleapis.com/maps/api/staticmap?maptype=roadmap&sensor=false&size=640x640" }
 $5~/is NOT/ {$5="red"}
 $5~/is IN/ {$5="green"}
 $5~/bad phone/ {$5="white"}
